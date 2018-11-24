@@ -4,7 +4,10 @@
   "description": "Imangine is a site where people can optimize their images for free",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -27,5 +30,12 @@
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.6.3"
   }
 }
