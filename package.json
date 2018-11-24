@@ -1,0 +1,26 @@
+{
+  "name": "imangine",
+  "version": "0.0.1",
+  "description": "Imangine is a site where people can optimize their images for free",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristoni/imangine.git"
+  },
+  "keywords": [
+    "image",
+    "optimization",
+    "nodejs",
+    "nextjs",
+    "express"
+  ],
+  "author": "Gabriele Cristoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristoni/imangine/issues"
+  },
+  "homepage": "https://github.com/cristoni/imangine#readme"
+}
