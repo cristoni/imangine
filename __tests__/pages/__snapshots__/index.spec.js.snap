@@ -1,9 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index renders the main page 1`] = `
-<p
-  className="text-info"
->
-  hello world!
-</p>
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1
+        className="text-center"
+      >
+        ImaNgine
+      </h1>
+      <p>
+        ImaNgine allow you to optimize your images for free.
+        <br />
+        It is developed using 
+        <a
+          href="https://reactjs.org/"
+          target="_blank"
+        >
+          React
+        </a>
+        , more specifically 
+        <a
+          href="https://nextjs.org/"
+          target="_blank"
+        >
+          Next.js
+        </a>
+        . You can find it's source code 
+        <a
+          href="https://github.com/cristoni/imangine"
+          target="_blank"
+        >
+          here
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        aria-disabled={false}
+        className="dropzone d-flex justify-content-center align-items-center"
+        onClick={[Function]}
+        onDragEnter={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        style={
+          Object {
+            "position": "relative",
+          }
+        }
+      >
+        <h6
+          className="text-uppercase"
+        >
+          Drop your files here or click to open the file explorer
+        </h6>
+        <input
+          accept="image/jpeg, image/png"
+          autoComplete="off"
+          disabled={false}
+          multiple={true}
+          onChange={[Function]}
+          style={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0.00001,
+              "pointerEvents": "none",
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+          type="file"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 `;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`MainContainer renders the main page container 1`] = `
-<div
-  className="container"
-/>
-`;

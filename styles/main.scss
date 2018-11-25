@@ -1,2 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,700|Kameron:400,700);
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.15px;
+}
+
+@import "dropzone";

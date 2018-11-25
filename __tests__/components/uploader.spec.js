@@ -1,10 +1,10 @@
 import React from 'react';
-import About from '../../pages/about';
+import Uploader from '../../components/uploader';
 import renderer from 'react-test-renderer';
 
-test('About renders the about page', () => {
+test('Uploader renders a file uploader', () => {
   const component = renderer.create(
-    <About />,
+    <Uploader />,
   );
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();

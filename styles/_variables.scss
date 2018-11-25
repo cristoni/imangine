@@ -8,8 +8,8 @@
 // // Color system
 // //
 
-// $white:    #fff !default;
-// $gray-100: #f8f9fa !default;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
 // $gray-200: #e9ecef !default;
 // $gray-300: #dee2e6 !default;
 // $gray-400: #ced4da !default;
@@ -70,14 +70,14 @@
 //   $colors
 // );
 
-// $primary:       $blue !default;
+$primary:       #3b678f !default;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
-// $dark:          $gray-800 !default;
+$dark:          #293744;
 
 // $theme-colors: () !default;
 // // stylelint-disable-next-line scss/dollar-variable-default
@@ -158,15 +158,15 @@
 // //
 // // Settings for the `<body>` element.
 
-// $body-bg:                   $white !default;
-// $body-color:                $gray-900 !default;
+$body-bg:                   $dark;
+$body-color:                $gray-100;
 
 // // Links
 // //
 // // Style anchor elements.
 
-// $link-color:                theme-color("primary") !default;
-// $link-decoration:           none !default;
+$link-color:                lighten($primary, 25%);
+$link-decoration:           underline;
 // $link-hover-color:          darken($link-color, 15%) !default;
 // $link-hover-decoration:     underline !default;
 
@@ -248,12 +248,12 @@
 // // Font, line-height, and color for body text, headings, and more.
 
 // // stylelint-disable value-keyword-case
-// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "EB Garamond", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // $font-family-base:            $font-family-sans-serif !default;
 // // stylelint-enable value-keyword-case
 
-// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1.2rem; // Assumes the browser default, typically `16px`
 // $font-size-lg:                ($font-size-base * 1.25) !default;
 // $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -264,18 +264,18 @@
 // $font-weight-base:            $font-weight-normal !default;
 // $line-height-base:            1.5 !default;
 
-// $h1-font-size:                $font-size-base * 2.5 !default;
-// $h2-font-size:                $font-size-base * 2 !default;
-// $h3-font-size:                $font-size-base * 1.75 !default;
-// $h4-font-size:                $font-size-base * 1.5 !default;
-// $h5-font-size:                $font-size-base * 1.25 !default;
+$h1-font-size:                $font-size-base * 3.75 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2.5 !default;
+$h4-font-size:                $font-size-base * 2 !default;
+$h5-font-size:                $font-size-base * 1.50 !default;
 // $h6-font-size:                $font-size-base !default;
 
 // $headings-margin-bottom:      ($spacer / 2) !default;
-// $headings-font-family:        inherit !default;
-// $headings-font-weight:        500 !default;
+$headings-font-family:        "Kameron", $font-family-sans-serif;
+$headings-font-weight:        700;
 // $headings-line-height:        1.2 !default;
-// $headings-color:              inherit !default;
+$headings-color:              $white;
 
 // $display1-size:               6rem !default;
 // $display2-size:               5.5rem !default;
