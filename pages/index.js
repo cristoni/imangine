@@ -4,7 +4,7 @@ export default () => (
   <div>
     <div className="row">
       <div className="col">
-        <h1 className="text-center">ImaNgine</h1>
+        <h1 className="text-center">Ima<span className="hl">N</span>gine</h1>
         <p>
           ImaNgine allow you to optimize your images for free.
           <br />

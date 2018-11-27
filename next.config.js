@@ -1,4 +1,8 @@
 const withSass = require("@zeit/next-sass");
 const withPurgeCss = require("next-purgecss");
 
-module.exports = withSass(/*withPurgeCss()*/);
+module.exports = withSass(withPurgeCss({
+  purgeCss: {
+    whitelist: () => ['body']
+  }
+}));
