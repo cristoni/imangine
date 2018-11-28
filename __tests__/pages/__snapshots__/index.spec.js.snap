@@ -11,7 +11,13 @@ exports[`Index renders the main page 1`] = `
       <h1
         className="text-center"
       >
-        ImaNgine
+        Ima
+        <span
+          className="hl"
+        >
+          N
+        </span>
+        gine
       </h1>
       <p>
         ImaNgine allow you to optimize your images for free.
@@ -47,46 +53,20 @@ exports[`Index renders the main page 1`] = `
     <div
       className="col"
     >
-      <div
-        aria-disabled={false}
-        className="dropzone d-flex justify-content-center align-items-center"
-        onClick={[Function]}
-        onDragEnter={[Function]}
-        onDragLeave={[Function]}
-        onDragOver={[Function]}
-        onDragStart={[Function]}
-        onDrop={[Function]}
-        style={
-          Object {
-            "position": "relative",
-          }
-        }
+      <h5
+        className="mb-2 mt-4"
       >
-        <h6
-          className="text-uppercase"
+        Select the 
+        <span
+          className="hl"
         >
-          Drop your files here or click to open the file explorer
-        </h6>
-        <input
-          accept="image/jpeg, image/png"
-          autoComplete="off"
-          disabled={false}
-          multiple={true}
-          onChange={[Function]}
-          style={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "opacity": 0.00001,
-              "pointerEvents": "none",
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
-          }
-          type="file"
-        />
-      </div>
+          Images
+        </span>
+         that you want to process
+      </h5>
+      <Uploader
+        onDropHandler={[Function]}
+      />
     </div>
   </div>
 </div>

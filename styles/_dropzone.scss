@@ -2,8 +2,8 @@
   position: relative;
   height: 30vh;
   min-height: 350px;
+  padding: 2rem;
   background-color: $primary;
-  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 
   &:hover {
