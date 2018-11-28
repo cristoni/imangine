@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilesList renders the uploaded files list 1`] = `
+<div
+  className="list-group shadow"
+/>
+`;
+
+exports[`FilesList renders the uploaded files list 2`] = `
+<div
+  className="list-group shadow"
+>
+  <a
+    className="list-group-item list-group-item-action"
+    href="#"
+    key="0"
+  >
+    file1
+  </a>
+  <a
+    className="list-group-item list-group-item-action"
+    href="#"
+    key="1"
+  >
+    file2
+  </a>
+  <a
+    className="list-group-item list-group-item-action"
+    href="#"
+    key="2"
+  >
+    file3
+  </a>
+</div>
+`;

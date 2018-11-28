@@ -1,60 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index renders the main page 1`] = `
-<Uploader>
-  <n
-    accept="image/jpeg, image/png"
-    activeClassName="dropzone--active"
-    className="dropzone d-flex justify-content-center align-items-center shadow"
-    disableClick={false}
-    disabled={false}
-    getDataTransferItems={[Function]}
-    inputProps={Object {}}
-    maxSize={Infinity}
-    minSize={0}
-    multiple={true}
-    preventDropOnDocument={true}
+exports[`Uploader renders the file uploader 1`] = `
+<n
+  accept="image/jpeg, image/png"
+  activeClassName="dropzone--active"
+  className="dropzone d-flex justify-content-center align-items-center shadow"
+  disableClick={false}
+  disabled={false}
+  getDataTransferItems={[Function]}
+  inputProps={Object {}}
+  maxSize={Infinity}
+  minSize={0}
+  multiple={true}
+  preventDropOnDocument={true}
+>
+  <h6
+    className="text-uppercase text-center"
   >
-    <div
-      aria-disabled={false}
-      className="dropzone d-flex justify-content-center align-items-center shadow"
-      onClick={[Function]}
-      onDragEnter={[Function]}
-      onDragLeave={[Function]}
-      onDragOver={[Function]}
-      onDragStart={[Function]}
-      onDrop={[Function]}
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-    >
-      <h6
-        className="text-uppercase text-center"
-      >
-        Drop your files here or click to open the file explorer
-      </h6>
-      <input
-        accept="image/jpeg, image/png"
-        autoComplete="off"
-        disabled={false}
-        multiple={true}
-        onChange={[Function]}
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "opacity": 0.00001,
-            "pointerEvents": "none",
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        type="file"
-      />
-    </div>
-  </n>
-</Uploader>
+    Drop your files here or click to open the file explorer
+  </h6>
+</n>
 `;

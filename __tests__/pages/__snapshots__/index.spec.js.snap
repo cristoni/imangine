@@ -71,3 +71,109 @@ exports[`Index renders the main page 1`] = `
   </div>
 </div>
 `;
+
+exports[`Index renders the main page 2`] = `
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1
+        className="text-center"
+      >
+        Ima
+        <span
+          className="hl"
+        >
+          N
+        </span>
+        gine
+      </h1>
+      <p>
+        ImaNgine allow you to optimize your images for free.
+        <br />
+        It is developed using 
+        <a
+          href="https://reactjs.org/"
+          target="_blank"
+        >
+          React
+        </a>
+        , more specifically 
+        <a
+          href="https://nextjs.org/"
+          target="_blank"
+        >
+          Next.js
+        </a>
+        . You can find it's source code 
+        <a
+          href="https://github.com/cristoni/imangine"
+          target="_blank"
+        >
+          here
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h5
+        className="mb-2 mt-4"
+      >
+        Select the 
+        <span
+          className="hl"
+        >
+          Images
+        </span>
+         that you want to process
+      </h5>
+      <Uploader
+        onDropHandler={[Function]}
+      />
+      <button
+        className="btn btn-warning btn-lg shadow d-flex justify-content-center ml-auto mr-auto mt-4"
+      >
+        Process selected files 
+        <i
+          className="ml-2 material-icons"
+        >
+          cloud_upload
+        </i>
+      </button>
+    </div>
+    <div
+      className="col-auto mw-50"
+    >
+      <h5
+        className="mb-2 mt-4"
+      >
+        Selected 
+        <span
+          className="hl"
+        >
+          I
+        </span>
+        mages
+      </h5>
+      <FilesList
+        files={
+          Array [
+            "file",
+            "file",
+            "file",
+          ]
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -4,4 +4,8 @@ const FilesList = ({files}) => (
   </div>
 )
 
+FilesList.defaultProps = {
+  files: []
+}
+
 export default FilesList
