@@ -44,7 +44,6 @@ exports[`SideModal renders its children when is open 2`] = `
     >
       <div
         className="side-modal__content shadow"
-        onClick={[Function]}
         style={
           Object {
             "opacity": 0.8,
