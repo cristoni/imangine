@@ -4,6 +4,7 @@ const FilesList = ({files}) => (
   <div className="list-group shadow">
     <Trail
       items={files}
+      keys={file => file.name}
       from={{ transform: 'translate3d(60px,0,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0px,0,0)', opacity: 1 }}>
       {file => props =>
