@@ -58,6 +58,14 @@ exports[`Index renders the main page 1`] = `
       />
     </div>
   </div>
+  <SideModal
+    close={[Function]}
+    open={false}
+  >
+    <ProcessConfiguration
+      files={Array []}
+    />
+  </SideModal>
 </div>
 `;
 
@@ -119,6 +127,7 @@ exports[`Index renders the main page 2`] = `
       />
       <button
         className="btn btn-warning btn-lg shadow d-flex justify-content-center ml-auto mr-auto mt-4"
+        onClick={[Function]}
       >
         Process selected files 
         <i
@@ -153,5 +162,19 @@ exports[`Index renders the main page 2`] = `
       />
     </div>
   </div>
+  <SideModal
+    close={[Function]}
+    open={false}
+  >
+    <ProcessConfiguration
+      files={
+        Array [
+          "file",
+          "file",
+          "file",
+        ]
+      }
+    />
+  </SideModal>
 </div>
 `;

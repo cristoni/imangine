@@ -1,17 +1,35 @@
 import React from 'react'
 import Uploader from '../components/uploader'
 import FilesList from '../components/files-list'
+import SideModal from '../components/side-modal'
+import ProcessConfiguration from '../components/process-configuration'
 
 export default class Index extends React.Component {
   state = {
-    files: []
+    files: [],
+    open: false,
   }
 
   onDropHandler(acceptedFiles, rejectedFiles) {
     if (rejectedFiles.length) console.error(rejectedFiles)
 
     this.setState({
-      files: acceptedFiles
+      files: acceptedFiles,
+      open: false,
+    })
+  }
+
+  onProcessHandler(e) {
+    e.preventDefault()
+
+    this.setState({
+      open: true,
+    })
+  }
+
+  onCloseSideModalHandler() {
+    this.setState({
+      open: false,
     })
   }
 
@@ -31,7 +49,11 @@ export default class Index extends React.Component {
           <div className="col">
             <h5 className="mb-2 mt-4">Select the <span className="hl">Images</span> that you want to process</h5>
             <Uploader onDropHandler={this.onDropHandler.bind(this)} />
-            {!!this.state.files.length && <button className="btn btn-warning btn-lg shadow d-flex justify-content-center ml-auto mr-auto mt-4">
+            {!!this.state.files.length
+             && <button
+              className="btn btn-warning btn-lg shadow d-flex justify-content-center ml-auto mr-auto mt-4"
+              onClick={this.onProcessHandler.bind(this)}
+            >
               Process selected files <i className="ml-2 material-icons">cloud_upload</i>
             </button>}
           </div>
@@ -40,6 +62,9 @@ export default class Index extends React.Component {
             <FilesList files={this.state.files} />
           </div>}
         </div>
+        <SideModal open={this.state.open} close={this.onCloseSideModalHandler.bind(this)}>
+          <ProcessConfiguration files={this.state.files} />
+        </SideModal>
       </div>
     )
   }
