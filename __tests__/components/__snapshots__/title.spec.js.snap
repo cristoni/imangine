@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title renders the site title with animation 1`] = `
+<_default>
+  <div
+    className="d-flex h1 justify-content-center mb-5 mt-3"
+  >
+    <Trail
+      config={
+        Object {
+          "friction": 60,
+          "tension": 280,
+        }
+      }
+      dealy={250}
+      from={
+        Object {
+          "opacity": 0,
+          "transform": "translate3d(0,-40px,0)",
+        }
+      }
+      items={
+        Array [
+          Object {
+            "className": "",
+            "key": 1,
+            "text": "Ima",
+          },
+          Object {
+            "className": "hl",
+            "key": 2,
+            "text": "N",
+          },
+          Object {
+            "className": "",
+            "key": 3,
+            "text": "gine",
+          },
+        ]
+      }
+      keys={[Function]}
+      to={
+        Object {
+          "opacity": 1,
+          "transform": "translate3d(0,0px,0)",
+        }
+      }
+    >
+      <Spring
+        attach={[Function]}
+        config={
+          Object {
+            "friction": 60,
+            "tension": 280,
+          }
+        }
+        dealy={250}
+        force={false}
+        from={
+          Object {
+            "opacity": 0,
+            "transform": "translate3d(0,-40px,0)",
+          }
+        }
+        immediate={false}
+        inject={[Function]}
+        key="1"
+        native={false}
+        reset={false}
+        to={
+          Object {
+            "opacity": 1,
+            "transform": "translate3d(0,0px,0)",
+          }
+        }
+      >
+        <div
+          className=""
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translate3d(0,-40px,0)",
+            }
+          }
+        >
+          Ima
+        </div>
+      </Spring>
+      <Spring
+        attach={[Function]}
+        config={
+          Object {
+            "friction": 60,
+            "tension": 280,
+          }
+        }
+        dealy={250}
+        force={false}
+        from={
+          Object {
+            "opacity": 0,
+            "transform": "translate3d(0,-40px,0)",
+          }
+        }
+        immediate={false}
+        inject={[Function]}
+        key="2"
+        native={false}
+        onRest={null}
+        reset={false}
+        to={
+          Object {
+            "opacity": 1,
+            "transform": "translate3d(0,0px,0)",
+          }
+        }
+      >
+        <div
+          className="hl"
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translate3d(0,-40px,0)",
+            }
+          }
+        >
+          N
+        </div>
+      </Spring>
+      <Spring
+        attach={[Function]}
+        config={
+          Object {
+            "friction": 60,
+            "tension": 280,
+          }
+        }
+        dealy={250}
+        force={false}
+        from={
+          Object {
+            "opacity": 0,
+            "transform": "translate3d(0,-40px,0)",
+          }
+        }
+        immediate={false}
+        inject={[Function]}
+        key="3"
+        native={false}
+        onRest={null}
+        reset={false}
+        to={
+          Object {
+            "opacity": 1,
+            "transform": "translate3d(0,0px,0)",
+          }
+        }
+      >
+        <div
+          className=""
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translate3d(0,-40px,0)",
+            }
+          }
+        >
+          gine
+        </div>
+      </Spring>
+    </Trail>
+  </div>
+</_default>
+`;

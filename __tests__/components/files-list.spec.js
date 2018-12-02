@@ -13,7 +13,4 @@ test('FilesList renders the uploaded files list', () => {
 
   wrapper = shallow(<FilesList files={mockFiles} />);
   expect(wrapper).toMatchSnapshot();
-
-  const listGroupItems = wrapper.find('.list-group-item');
-  expect(listGroupItems.length).toBe(mockFiles.length);
 });

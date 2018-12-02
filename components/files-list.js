@@ -1,6 +1,15 @@
+import { Trail } from 'react-spring'
+
 const FilesList = ({files}) => (
   <div className="list-group shadow">
-    {files.map((file, i) => <a key={i} href="#" className="list-group-item list-group-item-action">{file.name}</a>)}
+    <Trail
+      items={files}
+      from={{ transform: 'translate3d(60px,0,0)', opacity: 0 }}
+      to={{ transform: 'translate3d(0px,0,0)', opacity: 1 }}>
+      {file => props =>
+        <div style={props} href="#" className="list-group-item list-group-item-action">{file.name}</div>
+      }
+    </Trail>
   </div>
 )
 

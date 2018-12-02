@@ -20,7 +20,6 @@ export default class Index extends React.Component {
       <div>
         <div className="row">
           <div className="col">
-            <h1 className="text-center">Ima<span className="hl">N</span>gine</h1>
             <p>
               ImaNgine allow you to optimize your images for free.
               <br />

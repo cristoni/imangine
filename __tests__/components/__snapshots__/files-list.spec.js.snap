@@ -3,33 +3,61 @@
 exports[`FilesList renders the uploaded files list 1`] = `
 <div
   className="list-group shadow"
-/>
+>
+  <Trail
+    from={
+      Object {
+        "opacity": 0,
+        "transform": "translate3d(60px,0,0)",
+      }
+    }
+    items={Array []}
+    keys={[Function]}
+    to={
+      Object {
+        "opacity": 1,
+        "transform": "translate3d(0px,0,0)",
+      }
+    }
+  >
+    <Component />
+  </Trail>
+</div>
 `;
 
 exports[`FilesList renders the uploaded files list 2`] = `
 <div
   className="list-group shadow"
 >
-  <a
-    className="list-group-item list-group-item-action"
-    href="#"
-    key="0"
+  <Trail
+    from={
+      Object {
+        "opacity": 0,
+        "transform": "translate3d(60px,0,0)",
+      }
+    }
+    items={
+      Array [
+        Object {
+          "name": "file1",
+        },
+        Object {
+          "name": "file2",
+        },
+        Object {
+          "name": "file3",
+        },
+      ]
+    }
+    keys={[Function]}
+    to={
+      Object {
+        "opacity": 1,
+        "transform": "translate3d(0px,0,0)",
+      }
+    }
   >
-    file1
-  </a>
-  <a
-    className="list-group-item list-group-item-action"
-    href="#"
-    key="1"
-  >
-    file2
-  </a>
-  <a
-    className="list-group-item list-group-item-action"
-    href="#"
-    key="2"
-  >
-    file3
-  </a>
+    <Component />
+  </Trail>
 </div>
 `;
