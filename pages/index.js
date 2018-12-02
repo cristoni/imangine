@@ -62,6 +62,7 @@ export default class Index extends React.Component {
             <FilesList files={this.state.files} />
           </div>}
         </div>
+        
         <SideModal open={this.state.open} close={this.onCloseSideModalHandler.bind(this)}>
           <ProcessConfiguration files={this.state.files} />
         </SideModal>
