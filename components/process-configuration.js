@@ -34,7 +34,7 @@ const ProcessConfiguration = ({files}) => (
           <p>Check to set the resolution you want your images resized to.</p>
           <ErrorMessage name="resolution" component="div" />
 
-          <div className={`${values.resolution ? 'visible' : 'invisible'}`}>
+          <div className={`${values.resolution ? '' : 'd-none'}`}>
             <div className="form-group row">
               <label htmlFor="width" className="col-sm-2 col-form-label">Width:</label>
               <div className="col-sm-10">
