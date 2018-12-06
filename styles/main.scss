@@ -10,6 +10,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   // -webkit-text-stroke: 0.15px;
   min-height: 100vh;
+
+  // &::selection {
+  //   background-color: $body-color;
+  //   color: $body-bg;
+  // }
+}
+
+::selection {
+  background-color: $body-color;
+  color: $body-bg;
 }
 
 hr {
@@ -33,6 +43,13 @@ hr {
 .btn-lg {
   .material-icons {
     line-height: 1.5;
+  }
+}
+
+a, .hl {
+  &::selection {
+    background-color: $yellow;
+    color: $body-color;
   }
 }
 
