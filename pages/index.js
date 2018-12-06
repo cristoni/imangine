@@ -75,9 +75,9 @@ export default class Index extends React.Component {
 
   componentWillUnmount() {
     if (this.context.constructor.name !== 'Socket') return
-    
-    this.context.remove('processed', this.processedHandler)
-    this.context.remove('process.end', this.processEndHandler)
+
+    this.context.removeListener('processed', this.processedHandler)
+    this.context.removeListener('process.end', this.processEndHandler)
   }
 
   render() {
