@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 
-const ProcessConfiguration = ({files}) => (
+const ProcessConfiguration = ({ onSubmit }) => (
   <div className="process-configuration">
     <h4 className="process-configuration__title">
       Process <span className="hl">C</span>onfiguration
@@ -14,12 +14,7 @@ const ProcessConfiguration = ({files}) => (
 
         return errors;
       }}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
+      onSubmit={onSubmit}
     >
       {({ values, isSubmitting }) => (
         <Form>
@@ -64,9 +59,5 @@ const ProcessConfiguration = ({files}) => (
     </Formik>
   </div>
 )
-
-ProcessConfiguration.defaultProps = {
-  files: []
-}
 
 export default ProcessConfiguration

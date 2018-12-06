@@ -1,13 +1,32 @@
 import React from 'react'
+import SocketContext from '../contexts/socket'
 import Uploader from '../components/uploader'
 import FilesList from '../components/files-list'
 import SideModal from '../components/side-modal'
 import ProcessConfiguration from '../components/process-configuration'
 
 export default class Index extends React.Component {
+  static contextType = SocketContext
+
   state = {
     files: [],
     open: false,
+    listening: false,
+  }
+
+  constructor() {
+    super()
+
+    this.processedHandler = this.processedHandler.bind(this)
+    this.processEndHandler = this.processEndHandler.bind(this)
+  }
+
+  processedHandler(data) {
+    console.log(data)
+  }
+
+  processEndHandler() {
+    alert('Image processing ended')
   }
 
   onDropHandler(acceptedFiles, rejectedFiles) {
@@ -31,6 +50,32 @@ export default class Index extends React.Component {
     this.setState({
       open: false,
     })
+  }
+
+  onSubmitHandler(values, { setSubmitting }) {
+    setTimeout(() => {
+      alert(JSON.stringify(values, null, 2))
+      this.context.emit('process', { files: this.state.files })
+      setSubmitting(false)
+    }, 400)
+  }
+
+  componentDidUpdate() {
+    if (!this.context) return
+    if (this.context.constructor.name !== 'Socket') return
+    if (this.state.listening) return
+
+    this.setState({
+      listening: true
+    })
+    
+    this.context.on('processed', this.processedHandler)
+    this.context.on('process.end', this.processEndHandler)
+  }
+
+  componentWillUnmount() {
+    this.context.remove('processed', this.processedHandler)
+    this.context.remove('process.end', this.processEndHandler)
   }
 
   render() {
@@ -64,7 +109,7 @@ export default class Index extends React.Component {
         </div>
         
         <SideModal open={this.state.open} close={this.onCloseSideModalHandler.bind(this)}>
-          <ProcessConfiguration files={this.state.files} />
+          <ProcessConfiguration onSubmit={this.onSubmitHandler.bind(this)} />
         </SideModal>
       </div>
     )

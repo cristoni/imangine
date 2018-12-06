@@ -27,44 +27,6 @@ exports[`ProcessConfiguration renders the process configuration panel for upload
       }
     }
     isInitialValid={false}
-    onSubmit={[Function]}
-    validate={[Function]}
-    validateOnBlur={true}
-    validateOnChange={true}
-  >
-    <Component />
-  </Formik>
-</div>
-`;
-
-exports[`ProcessConfiguration renders the process configuration panel for uploaded images 2`] = `
-<div
-  className="process-configuration"
->
-  <h4
-    className="process-configuration__title"
-  >
-    Process 
-    <span
-      className="hl"
-    >
-      C
-    </span>
-    onfiguration
-  </h4>
-  <hr />
-  <Formik
-    enableReinitialize={false}
-    initialValues={
-      Object {
-        "crop": false,
-        "height": 1080,
-        "resolution": false,
-        "width": 1920,
-      }
-    }
-    isInitialValid={false}
-    onSubmit={[Function]}
     validate={[Function]}
     validateOnBlur={true}
     validateOnChange={true}

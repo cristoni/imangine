@@ -63,7 +63,7 @@ exports[`Index renders the main page 1`] = `
     open={false}
   >
     <ProcessConfiguration
-      files={Array []}
+      onSubmit={[Function]}
     />
   </SideModal>
 </div>
@@ -167,13 +167,7 @@ exports[`Index renders the main page 2`] = `
     open={false}
   >
     <ProcessConfiguration
-      files={
-        Array [
-          "file",
-          "file",
-          "file",
-        ]
-      }
+      onSubmit={[Function]}
     />
   </SideModal>
 </div>
